@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* Re-setting the 10px margin default */
+  min-height: 100vh;
+  /* Measure of the height of the window */
+  display: flex;
+  justify-content: center;
+  /* Justifies on the horizontal axis */
+  align-items: center;
+  /* Center on the vertical axis */
+  background: rgb(37, 37, 37);
+}
+
+.button-container {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+  /* The shadow is going to be on the inside of the object */
+  /* 0 Is he horizontal offset 20px is vertical*/
+  /* 4px is the blur */
+  /* -19px reps the spread, a negative number means less spread */
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  /* Prevents the blue outline when clicked */
+  width: 120px;
+  height: 75px;
+  font-family: Barlow, sans-serif;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0px 2px 5px black;
+  background: linear-gradient(to top, #696969, #575757);
+  /* Linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. */
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4),
+    0 12px 12px 0px rgba(0, 0, 0, 0.3);
+  /* The comma separates the two box shadows */
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #696969, #575757);
+}
+
+button:active {
+  transform: translateY(3px);
+  /* Pushes the button down by 3px */
+  box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.3);
+}
